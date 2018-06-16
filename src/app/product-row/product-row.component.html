@@ -1,0 +1,12 @@
+
+1 <app-product-image [product]="product"></app-product-image>
+2 <div class="content">
+3 <div class="header">{{ product.name }}</div>
+4 <div class="meta">
+5 <div class="product-sku">SKU #{{ product.sku }}</div>
+6 </div>
+7 <div class="description">
+8 <app-product-department [product]="product"></app-product-department>
+9 </div>
+10 </div>
+11 <app-price-display [price]="product.price"></app-price-display>
